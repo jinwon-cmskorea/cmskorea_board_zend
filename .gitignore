@@ -1,0 +1,27 @@
+﻿#
+# 어플리케이션 환경설정이 업데이트시 변경되지 않도록 처리
+#
+application/configs/*.ini
+#
+# 어플리케이션 자료가 업데이트시 변경되지 않도록 처리
+#
+data/*
+!data/.gitkeep
+#
+## 어플리케이션 세션
+#
+sess_*
+#
+# 어플리케이션 운영 설정이 업데이트시 변경되지 않도록 처리
+#
+public/.htaccess
+#
+# 테스트환경이 업데이트시 변경되지 않도록 처리
+#
+tests/bootstrap.php
+#
+# 개발환경이 업데이트시 변경되지 않도록 처리
+#
+.buildpath
+.project
+.zfproject.xml
