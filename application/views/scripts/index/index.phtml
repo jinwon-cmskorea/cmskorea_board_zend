@@ -41,3 +41,11 @@
         </p>
     </div>
 </div>
+<table>
+<?php foreach($this->boardList as $post) : ?>
+<tr>
+    <td><?php echo $this->escape($post->title);?></td>
+    <td><?php echo $this->escape($post->writer);?></td>
+</tr>
+<?php endforeach; ?>
+</table>

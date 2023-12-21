@@ -8,7 +8,11 @@ class IndexController extends Zend_Controller_Action {
     }
 
     public function indexAction() {
-        Zend_Debug::dump('test');
+        //Zend_Debug::dump('test');
+        
+        $board = new Was_Board();
+        
+        $this->view->boardList = $board->getBoardList();
     }
 
 }
